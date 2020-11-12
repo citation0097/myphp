@@ -33,3 +33,18 @@ var list = {'e':10 , 'k':6 , 'm':7};
 for(var key in list){
     document.write("key:" +key + "value:"+ list[key] + "<br/>");
 }
+
+(function(){
+    var MYAPP = {}
+    MYAPP.calculator = {
+        'left' : null,
+        'right' : null
+    }
+    
+    MYAPP.calculator.left = 10;
+    MYAPP.calculator.right = 20;
+    function sum(){
+        return MYAPP.calculator.left + MYAPP.calculator.right;
+    }
+    document.write(sum());
+}())
